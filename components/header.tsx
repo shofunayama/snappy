@@ -15,19 +15,19 @@ export default function Header() {
         <nav className="flex items-center gap-6 md:gap-8">
           <Link
             href="/register?type=model"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
+            className="text-sm text-muted-foreground hover:text-foreground transition-all hover:scale-105"
           >
             モデル登録
           </Link>
           <Link
             href="#"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
+            className="text-sm text-muted-foreground hover:text-foreground transition-all hover:scale-105"
           >
             マイページ
           </Link>
           <Link
             href="#"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
+            className="text-sm text-muted-foreground hover:text-foreground transition-all hover:scale-105"
           >
             ヘルプ
           </Link>
