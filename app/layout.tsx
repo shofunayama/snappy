@@ -1,17 +1,34 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono, Noto_Sans_JP } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type { Metadata } from 'next'
+import { Noto_Sans_JP } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _notoSansJP = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+const _notoSansJP = Noto_Sans_JP({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700']
+})
 
 export const metadata: Metadata = {
-  title: "CutMatch - 美容師とカットモデルのマッチング",
-  description: "美容師とカットモデルをつなぐマッチングプラットフォーム",
-  generator: "v0.app",
+  title: 'Shappy - モデルを身近に',
+  description: 'カットモデルと美容師（サロン）をつなぐ女性向けマッチングサービス',
+  generator: 'v0.app',
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
 }
 
 export default function RootLayout({
@@ -21,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} suppressHydrationWarning>
         {children}
         <Analytics />
       </body>

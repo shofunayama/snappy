@@ -1,78 +1,78 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color scheme for beauty industry with pink and gold accents */
-  --background: oklch(0.99 0.005 320);
-  --foreground: oklch(0.2 0.01 320);
+  /* Updated color palette for Shappy - pink feminine aesthetic */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.01 320);
+  --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 320);
-  --primary: oklch(0.65 0.19 350);
+  --popover-foreground: oklch(0.145 0 0);
+  
+  /* Primary pink (#f472b6) in oklch */
+  --primary: oklch(0.72 0.18 340);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.75 0.08 60);
-  --secondary-foreground: oklch(0.2 0.01 320);
-  --muted: oklch(0.96 0.005 320);
-  --muted-foreground: oklch(0.5 0.01 320);
-  --accent: oklch(0.75 0.08 60);
-  --accent-foreground: oklch(0.2 0.01 320);
+  --primary-light: oklch(0.96 0.08 340);
+  
+  /* Secondary coral (#fb7185) in oklch */
+  --secondary: oklch(0.68 0.19 12);
+  --secondary-foreground: oklch(1 0 0);
+  
+  /* Neutrals */
+  --neutral-soft: oklch(0.96 0.01 340);
+  
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.98 0.1 50);
+  --accent-foreground: oklch(0.145 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.92 0.005 320);
-  --input: oklch(0.92 0.005 320);
-  --ring: oklch(0.65 0.19 350);
-  --chart-1: oklch(0.65 0.19 350);
-  --chart-2: oklch(0.75 0.08 60);
-  --chart-3: oklch(0.6 0.15 280);
-  --chart-4: oklch(0.7 0.12 30);
-  --chart-5: oklch(0.55 0.18 340);
-  --radius: 0.75rem;
-  --sidebar: oklch(0.99 0.005 320);
-  --sidebar-foreground: oklch(0.2 0.01 320);
-  --sidebar-primary: oklch(0.65 0.19 350);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.96 0.005 320);
-  --sidebar-accent-foreground: oklch(0.2 0.01 320);
-  --sidebar-border: oklch(0.92 0.005 320);
-  --sidebar-ring: oklch(0.65 0.19 350);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.93 0.02 340);
+  --input: oklch(0.93 0.02 340);
+  --ring: oklch(0.72 0.18 340);
+  --chart-1: oklch(0.72 0.18 340);
+  --chart-2: oklch(0.68 0.19 12);
+  --chart-3: oklch(0.6 0.118 184.704);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 1rem;
 }
 
 .dark {
-  --background: oklch(0.15 0.01 320);
-  --foreground: oklch(0.98 0.005 320);
-  --card: oklch(0.18 0.01 320);
-  --card-foreground: oklch(0.98 0.005 320);
-  --popover: oklch(0.18 0.01 320);
-  --popover-foreground: oklch(0.98 0.005 320);
-  --primary: oklch(0.7 0.19 350);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.75 0.08 60);
-  --secondary-foreground: oklch(0.15 0.01 320);
-  --muted: oklch(0.25 0.01 320);
-  --muted-foreground: oklch(0.65 0.01 320);
-  --accent: oklch(0.75 0.08 60);
-  --accent-foreground: oklch(0.98 0.005 320);
-  --destructive: oklch(0.5 0.2 27);
-  --destructive-foreground: oklch(0.98 0.005 320);
-  --border: oklch(0.25 0.01 320);
-  --input: oklch(0.25 0.01 320);
-  --ring: oklch(0.7 0.19 350);
-  --sidebar: oklch(0.18 0.01 320);
-  --sidebar-foreground: oklch(0.98 0.005 320);
-  --sidebar-primary: oklch(0.7 0.19 350);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.25 0.01 320);
-  --sidebar-accent-foreground: oklch(0.98 0.005 320);
-  --sidebar-border: oklch(0.25 0.01 320);
-  --sidebar-ring: oklch(0.7 0.19 350);
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.72 0.18 340);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.68 0.19 12);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.98 0.1 50);
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.3 0.02 340);
+  --input: oklch(0.3 0.02 340);
+  --ring: oklch(0.72 0.18 340);
+  --chart-1: oklch(0.72 0.18 340);
+  --chart-2: oklch(0.68 0.19 12);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  /* updated to use only Noto Sans JP */
+  --font-sans: 'Noto Sans JP', sans-serif;
+  --font-display: 'Noto Sans JP', sans-serif;
+  --font-mono: 'Noto Sans JP', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -81,6 +81,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -92,6 +93,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-neutral-soft: var(--neutral-soft);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -101,14 +103,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 @layer base {
