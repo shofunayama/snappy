@@ -2,13 +2,28 @@
 
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-b from-primary-light to-white/50 py-8 md:py-16 px-4 md:px-8">
+    <section className="bg-linear-to-b from-primary-light to-white/50 py-8 md:py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        {/* Illustration - Mobile First */}
+        <div className="flex justify-center md:justify-end md:order-2">
+          <div className="relative w-64 md:w-80">
+            <Image
+              src="/images/hero-woman.png"
+              alt="笑顔の女性のイラスト"
+              width={500}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+        </div>
+
         {/* Text Content */}
-        <div className="flex flex-col gap-4 md:gap-6">
+        <div className="flex flex-col gap-4 md:gap-6 md:order-1">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-balance">
               <span className="bg-linear-to-r from-pink-500 via-purple-500 to-indigo-600 bg-clip-text text-transparent animate-gradient">
@@ -41,20 +56,6 @@ export default function HeroSection() {
             >
               サービスの使い方を見る
             </Button>
-          </div>
-        </div>
-
-        {/* Illustration */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-full max-w-sm">
-            <div className="absolute inset-0 bg-linear-to-br from-primary/10 via-secondary/5 to-transparent rounded-full blur-3xl" />
-            <div className="relative bg-white/50 rounded-3xl aspect-square flex items-center justify-center border border-primary/20">
-              <div className="text-center space-y-2">
-                <div className="text-5xl">✨</div>
-                <p className="text-muted-foreground text-sm">女性のイラスト</p>
-                <p className="text-xs text-muted-foreground">ロングヘアで微笑む</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

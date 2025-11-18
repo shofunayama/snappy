@@ -1,16 +1,15 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Star, User } from 'lucide-react'
 import { useRef } from 'react'
-import Image from 'next/image'
 
 const models = [
-  { id: 1, name: 'さくら', age: 23, location: '表参道', rating: 5, tags: ['カット', 'カラー'], image: '/placeholder.svg?height=200&width=200' },
-  { id: 2, name: 'えみ', age: 26, location: '渋谷', rating: 4.5, tags: ['カット', '撮影OK'], image: '/placeholder.svg?height=200&width=200' },
-  { id: 3, name: 'ひかり', age: 21, location: '新宿', rating: 5, tags: ['カラー'], image: '/placeholder.svg?height=200&width=200' },
-  { id: 4, name: 'みさき', age: 25, location: '銀座', rating: 4, tags: ['カット', 'パーマ'], image: '/placeholder.svg?height=200&width=200' },
-  { id: 5, name: 'あおい', age: 22, location: '六本木', rating: 5, tags: ['撮影OK'], image: '/placeholder.svg?height=200&width=200' },
+  { id: 1, name: 'さくら', age: 23, location: '表参道', rating: 5, tags: ['カット', 'カラー'] },
+  { id: 2, name: 'えみ', age: 26, location: '渋谷', rating: 4.5, tags: ['カット', '撮影OK'] },
+  { id: 3, name: 'ひかり', age: 21, location: '新宿', rating: 5, tags: ['カラー'] },
+  { id: 4, name: 'みさき', age: 25, location: '銀座', rating: 4, tags: ['カット', 'パーマ'] },
+  { id: 5, name: 'あおい', age: 22, location: '六本木', rating: 5, tags: ['撮影OK'] },
 ]
 
 export default function TopModels() {
@@ -54,14 +53,8 @@ export default function TopModels() {
                 key={model.id}
                 className="shrink-0 w-40 md:w-44 p-4 rounded-2xl border-border hover:shadow-md transition-shadow cursor-pointer"
               >
-                <div className="w-full aspect-square bg-linear-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
-                  <Image
-                    src={model.image || "/placeholder.svg"}
-                    alt={model.name}
-                    width={200}
-                    height={200}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-full aspect-square bg-linear-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center mb-3">
+                  <User className="w-20 h-20 text-primary/40" />
                 </div>
 
                 {/* Model Info */}
