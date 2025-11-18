@@ -52,9 +52,9 @@ export default function TopModels() {
             {models.map((model) => (
               <Card
                 key={model.id}
-                className="flex-shrink-0 w-40 md:w-44 p-4 rounded-2xl border-border hover:shadow-md transition-shadow cursor-pointer"
+                className="shrink-0 w-40 md:w-44 p-4 rounded-2xl border-border hover:shadow-md transition-shadow cursor-pointer"
               >
-                <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
+                <div className="w-full aspect-square bg-linear-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center mb-3 overflow-hidden">
                   <Image
                     src={model.image || "/placeholder.svg"}
                     alt={model.name}
