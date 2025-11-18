@@ -10,8 +10,10 @@ export default function HeroSection() {
         {/* Text Content */}
         <div className="flex flex-col gap-4 md:gap-6">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight text-balance">
-              モデルを身近に
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-balance">
+              <span className="bg-linear-to-r from-pink-500 via-purple-500 to-indigo-600 bg-clip-text text-transparent animate-gradient">
+                モデルを身近に
+              </span>
             </h1>
             <p className="text-lg md:text-xl font-medium text-muted-foreground mt-2">
               カットモデル募集を、もっと気軽に、もっと自分らしく。
@@ -45,7 +47,7 @@ export default function HeroSection() {
         {/* Illustration */}
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent rounded-full blur-3xl" />
+            <div className="absolute inset-0 bg-linear-to-br from-primary/10 via-secondary/5 to-transparent rounded-full blur-3xl" />
             <div className="relative bg-white/50 rounded-3xl aspect-square flex items-center justify-center border border-primary/20">
               <div className="text-center space-y-2">
                 <div className="text-5xl">✨</div>
