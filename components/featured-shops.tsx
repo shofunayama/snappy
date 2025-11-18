@@ -41,9 +41,15 @@ export default function FeaturedShops() {
     <section className="py-8 md:py-10 px-4 md:px-8 bg-neutral-soft/50">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-5">
-          注目の募集中ショップ
-        </h2>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-2">
+            <span className="text-3xl">💈</span>
+            <h2 className="text-2xl md:text-3xl font-bold bg-linear-to-r from-purple-400 via-pink-400 to-rose-400 bg-clip-text text-transparent">
+              注目の募集中ショップ
+            </h2>
+            <span className="text-3xl">💈</span>
+          </div>
+        </div>
 
         {/* Shop List */}
         <div className="space-y-4">
@@ -53,8 +59,8 @@ export default function FeaturedShops() {
               className="flex gap-4 rounded-2xl p-4 md:p-5 border-border hover:shadow-md transition-shadow cursor-pointer"
             >
               {/* Thumbnail */}
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center">
+              <div className="shrink-0">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-linear-to-br from-primary/20 to-secondary/10 rounded-xl flex items-center justify-center">
                   <div className="text-3xl">💄</div>
                 </div>
 

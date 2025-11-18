@@ -29,9 +29,15 @@ export default function TopModels() {
     <section className="py-10 md:py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-5">
-          トップモデル
-        </h2>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-2">
+            <span className="text-3xl">✨</span>
+            <h2 className="text-2xl md:text-3xl font-bold bg-linear-to-r from-pink-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+              トップモデル
+            </h2>
+            <span className="text-3xl">✨</span>
+          </div>
+        </div>
 
         {/* Scroll Container */}
         <div className="relative">

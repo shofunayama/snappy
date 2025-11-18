@@ -13,11 +13,15 @@ export default function RegistrationCTA() {
   return (
     <>
       {/* Registration CTA Section */}
-      <section className="py-12 md:py-16 px-4 md:px-8 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-12 md:py-16 px-4 md:px-8 bg-linear-to-br from-primary/10 to-secondary/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-8 text-balance">
-            Shappyで新しい機会を見つけよう
-          </h2>
+          <div className="flex justify-center items-center gap-3 mb-8">
+            <span className="text-3xl">🌟</span>
+            <h2 className="text-2xl md:text-4xl font-bold text-center bg-linear-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+              Shappyで新しい機会を見つけよう
+            </h2>
+            <span className="text-3xl">🌟</span>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Model Registration Card */}
