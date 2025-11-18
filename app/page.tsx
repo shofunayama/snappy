@@ -4,6 +4,7 @@ import SearchPanel from '@/components/search-panel'
 import TopModels from '@/components/top-models'
 import FeaturedShops from '@/components/featured-shops'
 import RegistrationCTA from '@/components/registration-cta'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <TopModels />
       <FeaturedShops />
       <RegistrationCTA />
+      <Footer />
     </main>
   )
 }
