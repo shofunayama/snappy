@@ -28,7 +28,7 @@ export default function RegistrationCTA() {
                   素敵なサロンでのお仕事やスタイリング体験の機会が待っています。プロフィールを登録して、あなたに合ったお仕事を見つけましょう。
                 </p>
                 <Link href="/register?type=model" className="block">
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg py-6 text-lg font-semibold">
                     モデル登録
                   </Button>
                 </Link>
@@ -43,7 +43,7 @@ export default function RegistrationCTA() {
                   理想のモデルを探して、新しいスタイルや技術の提案ができます。サロン情報を登録して、登録モデルにアプローチしましょう。
                 </p>
                 <Link href="/register?type=salon" className="block">
-                  <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-lg">
+                  <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-lg py-6 text-lg font-semibold">
                     サロン登録
                   </Button>
                 </Link>

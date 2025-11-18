@@ -40,11 +40,11 @@ export default function HeroSection() {
             条件やエリア、日時から、自分にぴったりの募集を探せます。
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Link href="/register?type=salon">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 w-full sm:w-auto"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-12 py-6 text-lg font-semibold w-full sm:w-auto"
               >
                 無料で始める
               </Button>
@@ -52,7 +52,7 @@ export default function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full px-8 border-primary text-primary hover:bg-primary-light"
+              className="rounded-full px-12 py-6 text-lg font-semibold border-primary text-primary hover:bg-primary-light"
             >
               サービスの使い方を見る
             </Button>
